@@ -1,6 +1,87 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b2bec3;
+  font-family: "Nunito", sans-serif;
+}
+
+.vizitka {
+  position: relative;
+  background-color: white;
+  width: 550px;
+  margin: 150px auto;
+  padding: 30px;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 10px;
+  position: relative;
+}
+
+img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 5px 10px 18px #888888;
+  position: absolute;
+  right: -75px;
+  top: -75px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #d63031;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.odstavec2 {
+  padding-top: 18px;
+}
+
+.odkaz {
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.twitter {
+  background-color: #1da1f2;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+a.twitter:hover {
+  background-color: #0b7bc1;
+  transition: 0.3s;
+}
+
+.fb {
+  background-color: #3b5998;
+}
+
+a.fb:hover {
+  background-color: #2b406e;
+  transition: 0.3s;
+}
 
 /*
 BARVY:
@@ -13,4 +94,3 @@ tlačítko Twitter aktivní:	 #0b7bc1
 tlačítko Facebook:				 #3b5998
 tlačítko Facebook aktivní: #2b406e
 */
-
